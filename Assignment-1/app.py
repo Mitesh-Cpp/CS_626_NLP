@@ -1,6 +1,8 @@
 import streamlit as st
 import joblib
+import os
 
+currentDir = os.getcwd()
 
 from collections import defaultdict
 
@@ -176,9 +178,10 @@ class HMMTagger:
 
         return result_tags
     
-    
+
 def load_model():
-    model = joblib.load('./hmm_tagger_model.pkl')
+    model_path = os.path.join(currentDir, "hmm_tagger_model.pkl")
+    model = joblib.load(model_path)
     return model
 
 # Define tag list
