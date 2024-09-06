@@ -203,8 +203,8 @@ if st.button("Predict Tags"):
         model = load_model()
         p = model._viterbi(w)
         st.write("Word : Tag")
-        for w,t in zip(w,p):
-            st.write(f" {w_og} : {t}")
+        for w,t in zip(w_og,p):
+            st.write(f" {w} : {t}")
 
         # Display results
         # st.write("Words:", words_in_sentence)
