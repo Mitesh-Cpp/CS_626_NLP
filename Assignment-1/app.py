@@ -178,7 +178,7 @@ class HMMTagger:
     
     
 def load_model():
-    model = joblib.load('hmm_tagger_model.pkl')
+    model = joblib.load('./hmm_tagger_model.pkl')
     return model
 
 # Define tag list
