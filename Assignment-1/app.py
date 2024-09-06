@@ -180,8 +180,8 @@ class HMMTagger:
     
 
 def load_model():
-    model_path = os.path.join(currentDir, "hmm_tagger_model.pkl")
-    model = joblib.load(model_path)
+    # model_path = os.path.join(currentDir, "hmm_tagger_model.pkl")
+    model = joblib.load("Assignment-1/hmm_tagger_model.pkl")
     return model
 
 # Define tag list
