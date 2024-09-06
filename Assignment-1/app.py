@@ -196,12 +196,15 @@ sentence = st.text_area("Enter a sentence:")
 if st.button("Predict Tags"):
     if sentence:
         # Tokenize the sentence into words
-        words_in_sentence = sentence.lower().split()
+        w = sentence.lower().split()
 
         # Load model and make predictions
         model = load_model()
-        predicted_tags = model._viterbi(words_in_sentence)
+        p = model._viterbi(w)
+
+        for w,t in zip(w,p):
+            st.write(f"Word: {w}, Tag: {t}")
 
         # Display results
-        st.write("Words:", words_in_sentence)
-        st.write("Predicted Tags:", predicted_tags)
+        # st.write("Words:", words_in_sentence)
+        # st.write("Predicted Tags:", predicted_tags)
