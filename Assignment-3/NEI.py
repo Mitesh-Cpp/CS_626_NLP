@@ -52,8 +52,8 @@ def infer(model, scaler, s):
     return pred, tokens, features
 
 
-nei_model = pickle.load(open("nei_model.sav", 'rb'))
-scaler_model = pickle.load(open("scaler_model.sav", 'rb'))
+nei_model = pickle.load(open("Assignment-3/nei_model.sav", 'rb'))
+scaler_model = pickle.load(open("Assignment-3/scaler_model.sav", 'rb'))
 
 st.title("Named-Entity Identification")
 st.text("Group: Chetan, Harshvivek, Udhay")
