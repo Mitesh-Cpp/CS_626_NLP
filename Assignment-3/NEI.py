@@ -56,7 +56,7 @@ nei_model = pickle.load(open("Assignment-3/nei_model.sav", 'rb'))
 scaler_model = pickle.load(open("Assignment-3/scaler_model.sav", 'rb'))
 
 st.title("Named-Entity Identification")
-st.text("Group: Chetan, Harshvivek, Udhay")
+st.text("Group: Mitesh, Varn, Prathamesh, Priyanshi")
 
 input = st.text_input("Enter input string here: ")
 
